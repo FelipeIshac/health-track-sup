@@ -6,16 +6,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Acesso HealthTrack</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="../css/login.css">
     </head>
     <body>
         <div class="container-login">
             <div class="form" >
                 <div class="logo-container" >
-                    <img class="logo" src="logo.png" alt="Logo Healtrack" />
+                    <img class="logo" src="../logo.png" alt="Logo Healtrack" />
                 </div>
                 <form action="html/dashboard.html">
                     
+                    <div class="form-group" >
+                        <input class="form-login" type="text" placeholder="Nome" autoComplete="off" required />
+                    </div>
+
+                    <div class="form-group" >
+                        <input class="form-login" type="text" placeholder="CPF" autoComplete="off" required />
+                    </div>
+
+                    <div class="form-group" >
+                        <input class="form-login" type="number" placeholder="Altura" autoComplete="off" required />
+                    </div>
+
                     <div class="form-group" >
                         <input class="form-login" type="email" placeholder="E-mail" autoComplete="off" required />
                     </div>
@@ -24,9 +36,9 @@
                         <input class="form-login" name="password" type="password" placeholder="Password" required />
                     </div>
 
-                    <button class="btn-library btn-login" type="submit" >Acessar</Button>   
+                    <button class="btn-library btn-login" type="submit" >Criar conta</Button>   
                 </form>
-                <a class="singup" href="html/singup.html">Criar uma conta nova</a>
+                <a class="singup" href="../index.html">Fazer Login</a>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

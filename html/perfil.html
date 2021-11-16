@@ -12,14 +12,14 @@
         <div class="container-header" >
             <div class="side-navbar show" >
                 <div class="logo-navbar" >
-                    <img src="../logo.svg" alt="Logo HealthTrack" />
+                    <h2>Health Track</h2>
                 </div>
                 <div class="content-navbar" >
                     <h1>Menu</h1>
                     <ul class="overflow-navbar" >
                         <a href="dashboard.html" ><li>Dashboard</li></a>
-                        <a href="peso.html" ><li>Cadatrar peso</li></a>
-                        <a href="meta.html" ><li>Cadatrar meta</li></a>
+                        <a href="lista-peso.html" ><li>Pesos</li></a>
+                        <a href="lista-atividade.html" ><li>Atividades</li></a>
                     </ul>
                 </div>
             </div>
@@ -29,31 +29,40 @@
                         HealthTrack
                     </div>
                     <div class="actions" >
+                        <div class="profile" >
+                            <a href="perfil.html">
+                                <img class="rounded-circle" src="../images/profile.png" alt="Perfil" />
+                            </a>
+                        </div>
                         <div class="sing-out" >
                             <a href="../index.html"><i class="fas fa-sign-out-alt"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="main-content" >
-                    <h1>Cadastro</h1>
+                    <h1>Meu perfil</h1>
                     <div class="row" >
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Cadastro de peso</h5>
+                                <h5 class="card-title">Formulário de dados pessoais</h5>
                                 <form action="dashboard.html">
                                     <div class="mb-3">
-                                        <label for="data-peso" class="form-label">Data</label>
-                                        <input type="date" class="form-control" id="data-peso" placeholder="04/02/2021" required />
+                                        <label for="nome" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="nome" required />
                                     </div>
                                     <div class="mb-3">
-                                        <label for="peso-meta" class="form-label">Peso meta</label>
-                                        <input type="number" class="form-control" id="peso-meta" required />
+                                        <label for="cpf" class="form-label">CPF</label>
+                                        <input type="text" class="form-control" id="cpf" required />
                                     </div>
                                     <div class="mb-3">
-                                        <label for="peso" class="form-label">Peso atual</label>
-                                        <input type="number" class="form-control" id="peso" required />
+                                        <label for="altura" class="form-label">Altura</label>
+                                        <input type="number" class="form-control" id="altura" required />
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">E-mail</label>
+                                        <input type="email" class="form-control" id="email" required />
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Salvar</button>
                                 </form>
                             </div>
                         </div>

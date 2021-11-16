@@ -13,10 +13,16 @@
     width: 350px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.logo{
+.form form{
     width: 100%;
+}
+
+
+.logo{
     margin-bottom: 25px;
 }
 
@@ -65,4 +71,26 @@
 .btn-login:focus{
     outline: none;
     box-shadow: none;
+}
+
+.logo-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.singup{
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
